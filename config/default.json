@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://user:12341234@cluster0.konwu.mongodb.net/app?retryWrites=true&w=majority",
+  "jwtSecret": "anastasia mironova"
+}
