@@ -4,9 +4,12 @@ const mongoose = require("mongoose");
 
 const app = express();
 
+app.use(express.json({ extended: true }));
+
 const PORT = config.get("port") || 5000;
 
 app.use("/api/auth", require("./routs/auth.routs"));
+app.use("/api/link", require("./routs/link.routs"));
 async function start() {
   try {
     await mongoose.connect(config.get("mongoUri"), {

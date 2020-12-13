@@ -82,7 +82,7 @@ router.post(
 
       res.json({ token, userTd: user.id });
     } catch (error) {
-      Response.status(500).json({
+      res.status(500).json({
         message: "Что-то пошло не так попробуйте снова"
       });
     }
