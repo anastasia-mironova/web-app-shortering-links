@@ -47,6 +47,7 @@ export const AuthPage = () => {
                   type="text"
                   name="email"
                   className="validate yellow-input"
+                  value={form.email}
                   onChange={changeHandler}
                 />
                 <label htmlFor="email">Email</label>
@@ -54,6 +55,7 @@ export const AuthPage = () => {
               <div className="input-field">
                 <input
                   placeholder="Введите пароль"
+                  value={form.password}
                   id="password"
                   type="password"
                   name="password"
